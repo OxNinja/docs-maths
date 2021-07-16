@@ -8,19 +8,18 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.expand
-    - toc.integrate
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: pink
-      accent: pink
+      primary: blue
+      accent: blue
       toggle:
         icon: material/weather-sunny
         name: Passer en mode nuit
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: pink
-      accent: pink
+      primary: light blue
+      accent: light blue
       toggle:
         icon: material/weather-night
         name: Passer en mode jour
@@ -30,6 +29,18 @@ markdown_extensions:
       permalink: ⚓︎
       toc_depth: 3
       slugify: !!python/name:pymdownx.slugs.uslugify_encoded
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - abbr
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.snippets
 
 extra:
   social:
@@ -39,3 +50,9 @@ extra:
       link: https://github.com/OxNinja
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/0x_Ninja
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
