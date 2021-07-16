@@ -1,0 +1,29 @@
+site_name: Maths docs
+site_url: https://maths.0xninja.fr
+theme:
+  name: material
+  language: fr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode nuit
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode jour
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://0xninja.fr
+    - icon: fontawesome/brands/github
+      link: https://github.com/OxNinja
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/0x_Ninja
