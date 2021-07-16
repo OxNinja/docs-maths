@@ -3,6 +3,12 @@ site_url: https://maths.0xninja.fr
 theme:
   name: material
   language: fr
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.expand
+    - toc.integrate
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -18,6 +24,12 @@ theme:
       toggle:
         icon: material/weather-night
         name: Passer en mode jour
+
+markdown_extensions:
+  - toc:
+      permalink: ⚓︎
+      toc_depth: 3
+      slugify: !!python/name:pymdownx.slugs.uslugify_encoded
 
 extra:
   social:
