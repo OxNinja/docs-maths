@@ -1,6 +1,3 @@
-???+ warning "Attention"
-    Travail en cours, des modifications sont très susceptibles d'arriver.
-
 ## Définition
 
 ### Théorème
@@ -75,6 +72,99 @@ Oui il faut un peu parler de géométrie pour mieux se représenter un nombre co
 
 ## Forme trigonométrique
 
+### Définitions
+
+???+ info "Définition"
+    Soient $z = a +ib$ un complexe non nul dans le repère orthonormé $(O; \vec{i}; \vec{j})$ et son image $M$.
+
+    * On appelle **module de $z$** le nombre réel positif noté $|z| = \sqrt{a^2 + b^2}$. *Il s'agit aussi de la norme du vecteur $\vec{OM}$*.
+    * On appelle **argument de $z$** la mesure en radians de l'angle $(\vec{i}; \vec{OM})$, noté $arg(z)$.
+
+???+ info "Propriétés des modules"
+    $\forall (z, z') \in \mathbb{C}^2$ :
+
+    * $|z|^2 = z \times \overline{z}$
+    * $|zz'| = |z| \times |z'|$
+    * $|\frac{z}{z'}| = \frac{|z|}{|z'|}, \forall z' \ne 0$
+
+???+ info "Propriétés des arguments"
+    $\forall (z, z') \in \mathbb{C}^2, (z, z')$ non nuls et $\forall n \in \mathbb{Z}$ :
+
+    * $arg(\overline{z}) = -arg(z)$
+    * $arg(zz') = arg(z) + arg(z')$
+    * $arg(z^n) = n \times arg(z)$
+    * $arg(\frac{z}{z'}) = arg(z) - arg(z')$
+
+???+ info "Remarque"
+    * $arg(-z) = arg(z) + arg(-1) = arg(z) + \pi$
+    * $arg(\frac{1}{z}) = arg(1) - arg(z) = - arg(z)$
+
+### Forme trigonométrique
+
+La **forme trigonométrique** du nombre complexe $z$ est $z = |z|(\cos(arg(z)) + i\sin(arg(z)))$. En posant $r = |z|$ et $\theta = arg(z)$, on obtient :
+
+$$
+z = r(\cos\theta + i\sin\theta)
+$$
+
+On utilisera l'identité trigonométrique pythagoricienne pour passer un nombre complexe de sa forme algébrique à sa forme trigonométrique, et inversement.
+
+??? info "Exemple"
+    Donner la forme trigonométrique du nombre complexe $z = 1 + i$.
+
+    La forme trigonométrique de $z$ est de la forme $z = r(\cos\theta + i\sin\theta)$.
+
+    Calcul du module de $z$ :
+
+    $$
+    r = |z| = \sqrt{a^2 + b^2} = \sqrt{1^2 + 1^2} = \sqrt{2}
+    $$
+
+    Calcul de $\cos\theta$[^1] :
+
+    [^1]: Utilisation de l'identité trigonométrique pythagoricienne $\cos\theta = \frac{adjascent}{hypothénuse}$.
+
+    $$
+    \cos\theta = \frac{a}{r} = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}
+    $$
+
+    Calcul de $\sin\theta$[^2] :
+
+    [^2]: Utilisation de l'identité trigonométrique pythagoricienne $\sin\theta = \frac{opposé}{hypothénuse}$.
+
+    $$
+    \sin\theta = \frac{b}{r} = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}
+    $$
+
+    Déduction de $\theta$[^3] :
+
+    [^3]: Voir [les valeurs remarquables trigonométriques](https://fr.wikipedia.org/wiki/Cercle_trigonom%C3%A9trique#Valeurs_remarquables).
+
+    $$
+    \theta = \frac{\pi}{4}
+    $$
+
+    Au final, la forme trigonométrique du nombre complexe $z$ est :
+
+    $$
+    z = \sqrt{2}(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4})
+    $$
+
+    *Remarque :* en simplifiant cette forme on retrouve bien la forme algébrique initiale $z = 1 + i$.
+
+## Forme exponentielle
+
+La **forme exponentielle** d'un nombre complexe $z$, avec $r = |z|$ et $\theta = arg(z)$ est $z = re^{i\theta}$
+
+En effet les [propriétés des arguments](#définitions) d'un nombre complexe justifient la notation exponentielle.
+
+???+ info "Propriétés"
+    $\forall (\theta, \theta') \in \mathbb{R}^2$, $\forall n \in \mathbb{N}$ :
+
+    * $e^{i\theta} \times e^{i\theta'} = e^{\theta + \theta'}$
+    * $(e^{i\theta})^n = e^{in\theta}$
+    * $\frac{e^{i\theta}}{e^{i\theta'}} = e^{i(\theta - \theta')}$
+
 ## Le conjugué
 
 ???+ info inline end "Exemple"
@@ -148,10 +238,16 @@ $z_{1} = \frac{-b + i\sqrt{-\Delta}}{2a}$ et $z_{2} = \frac{-b - i\sqrt{-\Delta}
     S = \{\frac{3 - i\sqrt{39}}{4} ; \frac{3 + i\sqrt{39}}{4}\}
     $$
 
+## Exercices
+
+Un jour peut-être. Avec des corrigés en plus.
+
 ---
 
 ???+ info "Sources"
     * [https://www.maths-cours.fr/cours/nombres-complexes-geometrie/](https://www.maths-cours.fr/cours/nombres-complexes-geometrie/)
+    * [https://fr.wikipedia.org/wiki/Cercle_trigonom%C3%A9trique](https://fr.wikipedia.org/wiki/Cercle_trigonom%C3%A9trique)
+    * [https://fr.wikipedia.org/wiki/Identit%C3%A9_trigonom%C3%A9trique_pythagoricienne](https://fr.wikipedia.org/wiki/Identit%C3%A9_trigonom%C3%A9trique_pythagoricienne)
     * Moi et mon cahier
 
 --8<-- "includes/abbreviations.md"
