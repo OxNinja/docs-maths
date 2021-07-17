@@ -47,6 +47,32 @@
 
 ## Représentation géométrique
 
+Oui il faut un peu parler de géométrie pour mieux se représenter un nombre complexe. Prennons le plan $P$, muni d'un repère orthonormé $(O; \vec{i}; \vec{j})$, ainsi que le point $M(2; 3)$ :
+
+![Plan complexe](img/nombres-complexes-plan.png){ loading=lazy }
+
+???+ info "Propriété"
+    À tout nombre complexe $x = a + ib$, on associe :
+
+    * un point $X(a; b)$ sur le plan $P$.
+    * un vecteur $\vec{v}(a; b)$.
+
+    On dit que $M$ est l'image de $z$, et inversement, $z$ est l'affixe de $M$. On dit aussi que $z$ est l'affixe du vecteur $\vec{u}$.
+
+### Calculs d'affixes
+
+1. Soient $A$ et $B$ deux points d'affixes $z_{A}$ et $z_{B}$.
+
+    L'affixe du vecteur $\vec{AB}$ vaut $z_{\vec{AB}} = z_{B} - z_{A}$.
+
+    L'affixe du milieu $M$ du segment $[AB]$ vaut $z_{M} = \frac{z_{A} + z_{B}}{2}$.
+
+2. Soient deux vecteurs du plan $P$, $\vec{u}(z)$, $\vec{v}(z')$ et un nombre réel $k$.
+
+    L'affixe du vecteur $\vec{w} = \vec{u} + \vec{v}$ vaut $z + z'$.
+
+    L'affixe du vecteur $k\vec{u}$ vaut $kz$.
+
 ## Forme trigonométrique
 
 ## Le conjugué
@@ -64,6 +90,8 @@ On note $\overline{z} = a - ib$ le conjugué de $z = a + ib$.
     * $\overline{zz'} = \overline{z} . \overline{z'}$
     * $\overline{\frac{z}{z'}} = \frac{\overline{z}}{\overline{z'}}, z' \ne 0$
     * $\overline{z^n} = \overline{z}^n$
+
+    Le conjugué d'un nombre complexe est son symétrique par rapport à l'axe des abscisses (axe des réels).
 
 ## Équation du second degré
 
@@ -86,15 +114,13 @@ $z_{0} = \frac{-b}{2a}$
 $z_{1} = \frac{-b + i\sqrt{-\Delta}}{2a}$ et $z_{2} = \frac{-b - i\sqrt{-\Delta}}{2a}$
 
 ??? info "Exemple"
-    Résolvons l'équation $f(z) = 0$ dans $\mathbb{C}$ :
+    Résolvons l'équation $f(z) = 0$ dans $\mathbb{C}$, avec :
 
     $$
-    \begin{equation}
-        f(z) = 2z^2 - 3z + 6
-    \end{equation}
+    f(z) = 2z^2 - 3z + 6
     $$
 
-    Il s'agit d'une ESD, nous allons déterminer la ou les solutions possibles dans $\mathbb{C}$ de $f(z)$.
+    Il s'agit d'une ESD, nous allons déterminer la ou les solutions possibles dans $\mathbb{C}$ de $f(z) = 0$.
 
     Calcul du discriminant :
 
@@ -102,21 +128,21 @@ $z_{1} = \frac{-b + i\sqrt{-\Delta}}{2a}$ et $z_{2} = \frac{-b - i\sqrt{-\Delta}
     \Delta = b^2 - 4ac = (-3)^2 - 4(2 \times 6) = -39
     $$
 
-    Nous trouvons un discriminant négatif. L'équation $f(z) = 0$ comprend deux solutions conjuguées dans $\mathbb{C}$ :
+    Nous trouvons un discriminant négatif. L'équation $f(z) = 0$ comprend deux solutions conjuguées dans $\mathbb{C}$ : $z_{1} = \frac{-b + i\sqrt{-\Delta}}{2a}$ et $z_{2} = \frac{-b - i\sqrt{-\Delta}}{2a}$.
 
-    $z_{1} = \frac{-b + i\sqrt{-\Delta}}{2a}$ et $z_{2} = \frac{-b - i\sqrt{-\Delta}}{2a}$
+    Calcul de la première racine :
 
     $$
     z_{1} = \frac{-(-3) - i\sqrt{-(-39)}}{2 \times 2} = \frac{3 - i\sqrt{39}}{4}
     $$
 
-    On a alors :
+    En dćoule alors la seconde :
 
     $$
     z_{2} = \frac{3 + i\sqrt{39}}{4}
     $$
 
-    Au final :
+    Au final, l'équation $f(z) = 0$ admet deux solutions dans $\mathbb{C}$ :
 
     $$
     S = \{\frac{3 - i\sqrt{39}}{4} ; \frac{3 + i\sqrt{39}}{4}\}
