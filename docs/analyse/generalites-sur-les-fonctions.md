@@ -1,6 +1,3 @@
-???+ warning "Travaux en cours"
-    Cette page est en cours de construction, des erreurs peuvent survenir.
-
 # Généralités sur les fonctions
 
 ## Domaine de définition
@@ -124,7 +121,7 @@ $$
 
     $f \circ g = f(g(x)) = f(\sqrt{\frac{1}{x}}) = 3(\sqrt{\frac{1}{x}})^2$
 
-Voilà c'est tout.
+Voilà c'est tout pour les composées.
 
 ---
 
