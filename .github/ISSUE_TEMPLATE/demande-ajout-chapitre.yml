@@ -14,7 +14,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: desc
+    id: sources
     attributes:
       label: Sources
       description: Des sources ou de la documentation sur le chapitre
