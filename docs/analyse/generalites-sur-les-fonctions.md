@@ -52,7 +52,26 @@ Oui il y a beaucoup de propriétés. Mais au moins le plus gros est dit.
 
 ## Extrema
 
+Encore là quelques définitions et propriétés.
+
+Soit $f$ une fonction. On dit que, sur un intervalle $I$, $f$ :
+
+* admet un **maximum** en $x$ (ou encore que $f(x)$ est le maximum de $f$) ssi $\forall y \in I, f(x) \geq f(y)$.
+* admet un **minimum** en $x$ (ou encore que $f(x)$ est le minimum de $f$) ssi $\forall y \in I, f(x) \leq f(y)$.
+
 ## Parité
+
+### Fonction paire
+
+On dit qu'une **fonction est paire** si elle possède une symétrie axiale par rapport à l'axe des ordonnées. Comme par exemple la fonction $f(x) = x^2$.
+
+On peut simplifier la phrase précédente par : une fonction $f$ est **paire** ssi $f(-x) = f(x)$.
+
+### Fonction impaire
+
+On dit qu'une **fonction est impaire** si elle possède une symétrie centrale par rapport à l'origine du plan. Comme par exemple la fonction $g(x) = \frac{1}{x}$.
+
+On peut simplifier la phrase précédente par : une fonction $g$ est **impaire** ssi $g(-x) = -g(x)$.
 
 ## Positions relatives
 
@@ -92,7 +111,7 @@ En outre, pour étudier la position relative entre deux fonctions $f$ et $g$, on
 
 Soient $f$ et $g$ deux fonctions, la **composée de $f$ et $g$** notée $f \circ g$ est définie comme suit :
 
-Soient $D_{f}$ et $D_{g}$, respectivement les ensembles de définition de $f$ et $g$.
+Soient $D_{f}$ et $D_{g}$, respectivement les ensembles de définition de $f$ et $g$, avec $D_{f} \subset D_{g}$.
 
 $$
 f \circ g(x) = f(g(x)), \forall x \in D_{f}, f \in D_{g}
