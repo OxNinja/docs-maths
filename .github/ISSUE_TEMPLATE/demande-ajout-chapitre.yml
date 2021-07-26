@@ -1,0 +1,23 @@
+name: Nouvelle notion/chapitre
+description: Demander un ajout de chapitre au site
+title: "[Chapitre] "
+labels: [chapitre]
+assignees:
+  - OxNinja
+body:
+  - type: textarea
+    id: desc
+    attributes:
+      label: Description
+      description: Un peu de détails sur ce nouveau chapitre
+      placeholder: Bla bla
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: Sources
+      description: Des sources ou de la documentation sur le chapitre
+      placeholder: Bla bla
+    validations:
+      required: true
