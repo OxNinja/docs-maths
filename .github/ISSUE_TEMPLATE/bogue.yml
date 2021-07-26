@@ -10,8 +10,7 @@ body:
     attributes:
       label: Description
       description: Un peu de détails sur ce bogue
-      placeholder: Bla bla|
-      Cliquer ici puis là et paf ça ne fonctionne plus
+      placeholder: Bla bla. Cliquer ici puis là et paf ça ne fonctionne plus
     validations:
       required: true
   - type: textarea
