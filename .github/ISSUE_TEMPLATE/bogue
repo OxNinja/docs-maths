@@ -1,0 +1,22 @@
+name: Bogue sur le site
+description: Ça ne fonctionne pas correctement
+title: "[Bogue] "
+labels: [bogue]
+assignees:
+  - OxNinja
+body:
+  - type: textarea
+    id: desc
+    attributes:
+      label: Description
+      description: Un peu de détails sur ce bogue
+      placeholder: Bla bla|
+      Cliquer ici puis là et paf ça ne fonctionne plus
+    validations:
+      required: true
+  - type: textarea
+    id: complements
+    attributes:
+      label: Informations complémentaires
+      description: Des informations supplémentaires pour le bogue
+      placeholder: Bla bla
