@@ -1,3 +1,6 @@
+???+ warning "Travaux en cours"
+    Cette page est en cours de construction, des erreurs peuvent survenir.
+
 # Généralités sur les fonctions
 
 ## Domaine de définition
@@ -53,7 +56,56 @@ Oui il y a beaucoup de propriétés. Mais au moins le plus gros est dit.
 
 ## Positions relatives
 
+Lorsque l'on souhaite étudier la position relative entre deux courbes, que ce soit pour comparer deux fonctions ou encore savoir quand deux fonctions ont la même valeur, il suffit **d'étudier la différence des deux fonctions**.
+
+En outre, pour étudier la position relative entre deux fonctions $f$ et $g$, on étudie le signe de $f(x) - g(x)$.
+
+??? info "Exemple"
+    Étudier la position relative entre les deux fonctions $f(x) = 4x^2 + 5x$ et $g(x) = -x^2 + 9x$.
+
+    Nous allons étudier $f(x) - g(x)$ :
+
+    $f(x) - g(x) = (4x^2 + 5x) - (-x^2 + 9x) = 5x^2 - 4x$
+
+    Étude de signe de $h(x) = 5x^2 - 4x$ :
+
+    $h(x) = 0 \Leftrightarrow 5x^2 - 4x = 0$
+
+    Résolvons l'ESD $h(x) = 0$ :
+
+    $\Delta = b^2 - 4ac = (-4)^2 - 4\times5\times0 = 16$
+
+    $\Delta > 0$ donc il y a deux racines dans $\mathbb{R}$ :
+
+    $x_{1}$ et $x_{2} = \frac{-b \pm \sqrt{\Delta}}{2a}$.
+
+    $x_{1} = \frac{4 - \sqrt{16}}{10} = 0$ et $x_{2} = \frac{4 + \sqrt{16}}{10} = \frac{4}{5}$
+
+    $h$ s'annule en deux points, $x_{1}$ et $x_{2}$, voici le tableau de signe de $h(x)$ avec les positions relatives de $f$ et $g$ :
+
+    | $x$                               | $-\infty$ | 0 |            | $\frac{4}{5}$ | $+\infty$ |
+    |-----------------------------------|-----------|---|------------|---------------|-----------|
+    | $h(x)$                            | +         | 0 | -          | 0             | +         |
+    | Position de $f$ par rapport à $g$ | au dessus |   | en dessous |               | au dessus |
+
 ## Composée de fonctions
+
+Soient $f$ et $g$ deux fonctions, la **composée de $f$ et $g$** notée $f \circ g$ est définie comme suit :
+
+Soient $D_{f}$ et $D_{g}$, respectivement les ensembles de définition de $f$ et $g$.
+
+$$
+f \circ g(x) = f(g(x)), \forall x \in D_{f}, f \in D_{g}
+$$
+
+??? info "Exemple"
+    Déterminer $f \circ g$ pour $f(x) = 3x^2$ et $g(x) = \sqrt{\frac{1}{x}}$.
+
+    Nous savons que $f \circ g = f(g(x))$ donc,
+
+    $f \circ g = f(g(x)) = f(\sqrt{\frac{1}{x}}) = 3(\sqrt{\frac{1}{x}})^2$
+
+Voilà c'est tout.
 
 ---
 
