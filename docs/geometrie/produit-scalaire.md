@@ -1,3 +1,5 @@
+## Rappels et définitions
+
 ??? info "Rappels sur les vecteurs"
     La norme d'un vecteur $\vec{u}$ entre deux points $A$ et $B$, tel que $\vec{u} = \vec{AB}$ se note $\|\vec{u}\|$, il s'agit de la distance entre les deux points. $\|\vec{u}\| = \sqrt{(x_{B} - x_{A})^2 + (y_{B} - y_{A})^2}$.
 
@@ -6,8 +8,6 @@
 $$
 \vec{u} \centerdot \vec{v} = \|\vec{u}\| \times \|\vec{v}\| \times \cos(\vec{u}, \vec{v})
 $$
-
-**Remarque** : si $\vec{u}$ ou $\vec{v}$ est nul, $\vec{u} \centerdot \vec{v} = 0$.
 
 ??? info "Exemple"
     Déterminer le produit scalaire entre les vecteurs $\vec{u}(2, 3)$ et $\vec{v}(-1, 4)$.
@@ -23,6 +23,13 @@ $$
     Calcul du produit scalaire :
 
     $\vec{u} \centerdot \vec{v} = \|\vec{u}\| \times \|\vec{v}\| \times \cos(\vec{u}, \vec{v}) = \sqrt{13} \times \sqrt{17} \times \cos()$
+
+**Remarque** : un produit scalaire nul implique un "angle droit" entre les deux vecteurs, on dit qu'ils sont **orthogonaux**. On dit aussi que le vecteur nul $\vec{0}$ est orthogonal à tout autre vecteur. La preuve :
+
+Soient $\vec{u}$ et $\vec{v}$ deux vecteurs du plan.
+
+$\vec{u} \centerdot \vec{v} = 0 \Leftrightarrow \|\vec{u}\| \times \|\vec{v}\| \times \cos(\vec{u}, \vec{v}) = 0$, or un produit de facteurs est nul ssi **au moins un** des facteurs est nul.
+
 
 
 ---
