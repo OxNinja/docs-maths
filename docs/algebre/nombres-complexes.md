@@ -226,7 +226,7 @@ $z_{1} = \frac{-b + i\sqrt{-\Delta}}{2a}$ et $z_{2} = \frac{-b - i\sqrt{-\Delta}
     z_{1} = \frac{-(-3) - i\sqrt{-(-39)}}{2 \times 2} = \frac{3 - i\sqrt{39}}{4}
     $$
 
-    En dćoule alors la seconde :
+    En découle alors la seconde :
 
     $$
     z_{2} = \frac{3 + i\sqrt{39}}{4}
