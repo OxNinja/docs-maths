@@ -11,6 +11,8 @@ Pour la petite histoire j'avais comme projet de réviser les cours de maths de l
 
 C'est comme ça que m'est venue cette idée : faire un site qui répertorie les cours et exos de maths de niveau lycée (terminale scientifique) aux études supérieures, et même plus !
 
+Le principe est aussi de simplifier certains termes pour sonner envie aux curieux de continuer d'aimer les maths.
+
 ## Informations
 
 Envie de suivre l'avancement du projet ? [Le kanban est ici !](https://github.com/OxNinja/docs-maths/projects/1)
