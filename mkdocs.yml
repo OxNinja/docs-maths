@@ -4,7 +4,7 @@ theme:
   name: material
   language: fr
   icon:
-    logo: fontawesome/solid/square-root-alt
+    logo: fontawesome/solid/square-root-variable
   favicon: assets/favicon.jpg
   features:
     - navigation.tabs
